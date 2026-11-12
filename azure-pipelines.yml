@@ -25,8 +25,8 @@ steps:
   displayName: 'Build and push Docker image'
   inputs:
     command: 'buildAndPush'
-    containerRegistry: '$(dockerRegistryServiceConnection)'
-    repository: '$(imageRepository)'
+    containerRegistry: 'dockerhub-connection'
+    repository: 'sofiiadolinina/items-api'
     Dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
     buildContext: '$(Build.SourcesDirectory)'
     tags: |
