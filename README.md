@@ -37,3 +37,5 @@ docker run --rm -p 8000:8000 items-api:latest
 - `DELETE /api/items/{item_id}`
 
 Data is stored in memory and resets when the service restarts.
+
+CI/CD pipeline автоматично запускається після push у main.
