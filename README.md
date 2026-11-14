@@ -39,3 +39,8 @@ docker run --rm -p 8000:8000 items-api:latest
 Data is stored in memory and resets when the service restarts.
 
 CI/CD pipeline автоматично запускається після push у main.
+
+## CI/CD перевірка
+
+Перевірка правила paths-ignore у GitHub Actions.
+Зміни лише у README.md не повинні запускати workflow.
