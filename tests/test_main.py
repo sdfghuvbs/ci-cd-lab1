@@ -40,3 +40,6 @@ def test_validation():
 def test_openapi():
     assert client.get('/openapi.json').status_code == 200
     assert client.get('/docs').status_code == 200
+
+def test_basic_math():
+    assert 2 + 2 == 4
