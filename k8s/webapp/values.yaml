@@ -1,0 +1,21 @@
+api:
+  image: ghcr.io/sdfghuvbs/ci-cd-lab1-api
+  tag: latest
+  replicas: 1
+frontend:
+  image: ghcr.io/sdfghuvbs/ci-cd-lab1-frontend
+  tag: latest
+  replicas: 1
+migration:
+  image: ghcr.io/sdfghuvbs/ci-cd-lab1-migrate
+  tag: latest
+postgres:
+  image: postgres:16-alpine
+  database: appdb
+  user: app
+  password: change-me-for-lab
+  storage: 1Gi
+ingress:
+  enabled: false
+  className: nginx
+  host: webapp.lab.test
